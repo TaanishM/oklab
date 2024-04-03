@@ -1,5 +1,4 @@
 import React from 'react';
-import App from '../App';
 import spaces from 'color-space';
 import hexRgb from 'hex-rgb';
 import RGBextract from './stringextractor';
