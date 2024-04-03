@@ -1,4 +1,6 @@
 required dependencies:
+
 hex-rgb
 react-p5
-package.json files go outside the src folder
+
+package info in redundant/package.txt files go outside the src folder
