@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import "./pengine.css";
 // import Randcolor from "./colorselector";
 import P5Sketch from "./p5perlin";
@@ -37,6 +37,7 @@ function resetClick() {
 function snapClick() {
     setClick("snap");
 }
+
 return <div className="main">
     <div className="bar">
         <div className="rectangle0">
@@ -58,27 +59,27 @@ return <div className="main">
     
     <div className="palette">
 
-        <input type="color" className="box1" Value={"#"+color1} onChange={e=>setColor1((e.target.value).substring(1))}/>
+        <input type="color" name='b1' className="box1" Value={"#"+colorset[0]} onChange={e=>setColor1((e.target.value.substring(1)))}/>
         <label value='#' className="label1">#</label>
         <input type="text" className="text1" Value={color1} onChange={e=>{if(e.target.value.length===6)setColor1(e.target.value)}}/>
 
-        <input type="color" className="box2" Value={"#"+color2} onChange={e=>setColor2((e.target.value).substring(1))}/>
+        <input type="color" className="box2" Value={"#"+colorset[1]} onChange={e=>setColor2((e.target.value.substring(1)))}/>
         <label value='#' className="label2">#</label>
         <input type="text" className="text2" Value={color2} onChange={e=>{if(e.target.value.length===6)setColor2(e.target.value)}}/>
 
-        <input type="color" className="box3" Value={"#"+color3} onChange={e=>setColor3((e.target.value).substring(1))}/>
+        <input type="color" className="box3" Value={"#"+colorset[2]} onChange={e=>setColor3((e.target.value.substring(1)))}/>
         <label value='#' className="label3">#</label>
         <input type="text" className="text3" Value={color3} onChange={e=>{if(e.target.value.length===6)setColor3(e.target.value)}}/>
 
-        <input type="color" className="box4" Value={"#"+color4} onChange={e=>setColor4((e.target.value).substring(1))}/>
+        <input type="color" className="box4" Value={"#"+colorset[3]} onChange={e=>setColor4((e.target.value.substring(1)))}/>
         <label value='#' className="label4">#</label>
         <input type="text" className="text4" Value={color4} onChange={e=>{if(e.target.value.length===6)setColor4(e.target.value)}}/>
 
-        <input type="color" className="box5" Value={"#"+color5} onChange={e=>setColor5((e.target.value).substring(1))}/>
+        <input type="color" className="box5" Value={"#"+colorset[4]} onChange={e=>setColor5((e.target.value.substring(1)))}/>
         <label value='#' className="label5">#</label>
         <input type="text" className="text5" Value={color5} onChange={e=>{if(e.target.value.length===6)setColor5(e.target.value)}}/>
 
-        <input type="color" className="box6" Value={"#"+color6} onChange={e=>setColor6((e.target.value).substring(1))}/>
+        <input type="color" className="box6" Value={"#"+colorset[5]} onChange={e=>setColor6((e.target.value.substring(1)))}/>
         <label value='#' className="label6">#</label>
         <input type="text" className="text6" Value={color6} onChange={e=>{if(e.target.value.length===6)setColor6(e.target.value)}}/>
         

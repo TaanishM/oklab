@@ -178,7 +178,8 @@ top: 120px;
 
 /* background:#e40d4d; */
 /* border-color: #282727; */
-border-style: solid; 
+border-style: solid;
+border-color: gray; 
 border-width: 1px;
 border-spacing: 4px;
 border-radius: 2px;
