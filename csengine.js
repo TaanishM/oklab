@@ -1,4 +1,3 @@
-import React from 'react';
 import spaces from 'color-space';
 import hexRgb from 'hex-rgb';
 import RGBextract from './stringextractor';
