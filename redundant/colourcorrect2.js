@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./pengine.css";
-import P5Sketch from "./p5perlin";
+import P5Sketch from "../p5perlin";
 import hexRgb from "hex-rgb";
-import RGBextract from "./stringextractor";
+import RGBextract from "../stringextractor";
 
 function Cpicker() {
     const [colors, setColors] = useState(Array.from({ length: 6 }, () => Math.random().toString(16).substr(-6)));
