@@ -9,7 +9,7 @@ var colorconv = hexRgb(maincol,{format:'css'});
 var colorconvRGB = RGBextract(colorconv);
 var colorconvHSL = spaces.rgb.hsl(colorconvRGB); 
 colorconvHSL=colorconvHSL.map((val)=>Math.round(val));
-return colorconvHSL[0]+" "+colorconvHSL[1]+" "+colorconvHSL[2];
+return colorconvHSL[0]+"° "+colorconvHSL[1]+"% "+colorconvHSL[2]+"%";
 }
 export default Csengine;
 
