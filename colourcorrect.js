@@ -97,7 +97,7 @@ return <div className="main">
         
     </div>
 
-    <div className="p5js"><P5Sketch2 data={colorset3} clickstat={clickstat}/></div>
+    <div className="p5js"><P5Sketch data={colorset3} clickstat={clickstat}/></div>
     
 </div>
 }
