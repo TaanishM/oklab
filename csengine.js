@@ -12,7 +12,8 @@ return colorconvHSL[0]+"° "+colorconvHSL[1]+"% "+colorconvHSL[2]+"%";
 }
 export default Csengine;
 
-// const result = Math.random().toString(16).substr(-6);    //testing stubs
+//testing stubs
+// const result = Math.random().toString(16).substr(-6);    
 // const res2 = hexRgb(result,{format:'css'});
 // var rgb1 = RGBextract(res2); 
 // var res3 = spaces.rgb.lab(rgb1);  //requires clean rgb values

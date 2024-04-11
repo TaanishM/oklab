@@ -60,7 +60,7 @@ return <div className="main">
     
     <div className="palette">
 
-        <input type="color" name='b1' className="box1" Value={"#"+colorset[0]} onChange={e=>setColor1((e.target.value.substring(1)))}/>
+        <input type="color" className="box1" Value={"#"+colorset[0]} onChange={e=>setColor1((e.target.value.substring(1)))}/>
         <label value='#' className="label1">#</label>
         <input type="text" className="text1" Value={color1} onChange={e=>{if(e.target.value.length===6)setColor1(e.target.value)}}/>
         <label className="hsl1" title="HSL"><Csengine color={color1}/></label>
