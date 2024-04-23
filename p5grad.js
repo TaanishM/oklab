@@ -2,7 +2,7 @@ import Sketch from "react-p5";
 import React from "react";
 
 const P5Grad = (props) => {
-const {data,hexdata, clickstat} = props;                         //props from main component
+const {data,hexdata,clickstat} = props;                         //props from main component
 
 const setup = (p5,canvasParentRef) => {                     //canvas setup
   p5.createCanvas(578, 600).parent(canvasParentRef);
