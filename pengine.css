@@ -304,7 +304,11 @@ top: 16px;
     
     /* background: #455615; */
 }
-
+.check{
+    position: absolute;
+    top: 236px;
+    left: 1402px;
+}
 /* Rectangle 14 */
 .rectangle2{
 box-sizing: border-box;

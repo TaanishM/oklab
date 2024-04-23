@@ -1,7 +1,7 @@
 import Sketch from "react-p5";
 import React,{useState} from "react";
 
-const P5Sketch = (props) => {
+const P5Perlin = (props) => {
   const {data,clickstat} = props;                         //props from main component
   const [particles, setParticles] = useState(             //particle state init
 
@@ -111,4 +111,4 @@ function onScreen(v,p5) {                                   //checks if particle
 )  
 }
 
-export default P5Sketch;
+export default P5Perlin;

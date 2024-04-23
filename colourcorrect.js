@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./pengine.css";
 // import Randcolor from "./colorselector";
-import P5Sketch from "./p5perlin";
+import P5Perlin from "./p5perlin";
 import hexRgb from "hex-rgb";
 import RGBextract from "./stringextractor";
 import Csengine from "./csengine";
-import P5Sketch2 from "./p5grad";
+import P5Grad from "./p5grad";
 
 function Cpicker(){
 
@@ -39,6 +39,16 @@ function resetClick() {
 }
 function snapClick() {
     setClick("snap");
+}
+const [checked, setChecked] = useState();
+
+function handleCheck(e) {
+    if(checked===false){
+        setChecked(true);
+    }
+    else{
+        setChecked(false);
+    }
 }
 
 return <div className="main">
@@ -96,8 +106,8 @@ return <div className="main">
         <button className="box8" onClick/> */}
         
     </div>
-
-    <div className="p5js"><P5Sketch data={colorset3} clickstat={clickstat}/></div>
+    <div className='check'><input type='button' value="Toggle Gradient" onClick={handleCheck}/></div>
+    <div className="p5js">{!checked ? <P5Perlin data={colorset3} clickstat={clickstat}/>:<P5Grad data={colorset3} hexdata={colorset} clickstat={clickstat}/>}</div>
     
 </div>
 }
