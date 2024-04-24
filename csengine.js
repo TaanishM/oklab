@@ -34,7 +34,7 @@ if(props.type==='CMY'){
 
 if(props.type==='OKL'){
     var colorconvOKL = Oklabconv(colorconvRGB);
-    colorconvOKL = colorconvOKL.map((val)=>Math.floor(val*1000)/1000);
+    colorconvOKL = colorconvOKL.map((val)=>(Math.floor(val*1000)/1000));
     return <><strong>L: </strong>{colorconvOKL[0]}<strong> a: </strong>{colorconvOKL[1]} <strong> b: </strong>{colorconvOKL[2]}</>
 }
 }
