@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./pengine.css";
 // import Randcolor from "./colorselector";
 import P5Perlin from "./p5perlin";
@@ -32,6 +32,10 @@ const colorset2 = colorset.map((color) => hexRgb(color,{format:'css'}));
 const colorset3 = colorset2.map((color)=>RGBextract(color));                  //2D matrix holding RGB values per color
 const colorcom = colorset.map((val)=>Complementary(val));
 
+useEffect(() => {
+    
+}, [color1,color2,color3,color4,color5,color6]);
+
 const [clickstat, setClick] = useState("false");                                //click handlers
 function handleHover() {
     setClick("true");
@@ -42,7 +46,7 @@ function resetClick() {
 function snapClick() {
     setClick("snap");
 }
-const [checked, setChecked] = useState();
+const [checked, setChecked] = useState(false);
 
 function handleCheck(e) {
     if(checked===false){
